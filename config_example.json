@@ -2,15 +2,12 @@
   "port": "3000",
   "adminAccount": "admin@admin.com",
   "db": {
-    "servername": "127.0.0.1",
+    "servername": "10.22.82.98",
     "DATABASE": "yapi",
-    "port": 27017,
-    "user": "test1",
-    "pass": "test1",
-    "authSource": ""
+    "port": "27017"
   },
   "mail": {
-    "enable": true,
+    "enable": false,
     "host": "smtp.163.com",
     "port": 465,
     "from": "***@163.com",
@@ -18,5 +15,14 @@
       "user": "***@163.com",
       "pass": "*****"
     }
+  },
+  "ldapLogin": {
+    "enable": true,
+    "server": "ldap://10.0.19.8:389",
+    "baseDn": "ldap",
+    "bindPassword": "88B2GGFY5sKQPSPy",
+    "searchDn": "OU=上海游族信息技术有限公司,DC=uz,DC=local",
+    "searchStandard": "&(objectClass=user)(sAMAccountName=%s)"
   }
+
 }
